@@ -1,0 +1,49 @@
+{{!< layout}}
+
+{{#contentFor 'pageStyles'}}
+    <link rel='stylesheet' href='/stylesheets/event.css'/>
+{{/contentFor}}
+
+{{#contentFor 'pageScripts'}}
+    <script src="/javascripts/events.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9B3ODp14GAevUVGqay3jxA4_GUBgLvTs&callback=initMap">
+    </script>
+{{/contentFor}}
+
+<div class="event-wrapper">
+    <div class="event">
+        <div class="event__title event-title">
+            <div class="event-title__pic"><img src="/images/logo.png"></div>
+            <div class="event-title__wrapper">
+                <div class="event-title__org">Virgin Active</div>
+                <div class="event-title__name">Off-Peak Contract</div>
+            </div>
+            <div class="event-title__icon"><img src="/images/icon.png"></div>
+        </div>
+        <div class="event__description">This affordable 12-month contract allows full access to Islington Angel Club during off-peak hours, including indoor and outdoor pools!</div>
+
+        <div class="event__details-title">Activity details:</div>
+        <div class="event__details">
+            <div class="event-what">
+                <div class="event-what__title">What:</div>
+                <div class="event-what__text">Off-Peak Gym Contract (Paid Activity)</div>
+            </div>
+            <div class="event-when">
+                <div class="event-when__title">When:</div>
+                <div class="event-when__text">8:30 - 15:30 Mon-Fri, 12:00-Sat/Sun</div>
+            </div>
+            <div class="event-extras">
+                <div class="event-extras__title">Extras:</div>
+                <div class="event-extras__text">10% discount with code XFY123</div>
+            </div>
+        </div>
+
+        <div class="event__where" id="map">
+            <!--<img src="/images/map.png" />-->
+        </div>
+        <div class="event__buttons-wrapper">
+            <button class="event__call-button">CALL</button>
+            <button class="event__website-button">WEBSITE</button>
+        </div>
+    </div>
+</div>
